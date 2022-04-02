@@ -4,7 +4,7 @@
 
 A simple rock paper scissors game made using HTML, SCSS and JS.
 
-See live [demo](https://github.com/kiruanime2003/rock-paper-scissors-game)
+See live [demo](https://kiruanime2003.github.io/rock-paper-scissors-game/)
 
 Images source - [medium.com](https://medium.com)
 
