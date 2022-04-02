@@ -2,7 +2,7 @@
 
 ![](screenshot.png)
 
-A simple rock paper scissors game made using HTML, SCSS and JS.
+A simple rock paper scissors game made using HTML, SCSS and JS which calculates the scores and displays it on the screen.
 
 See live [demo](https://kiruanime2003.github.io/rock-paper-scissors-game/)
 
