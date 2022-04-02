@@ -1,0 +1,166 @@
+$color-1: #EDF7FF;
+$color-2: #3587A4;
+$color-3: #30343F;
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+body
+{
+    background-color: $color-1;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1
+{
+    font-weight: 700;
+    color: $color-3;
+    letter-spacing: -0.5px;
+    font-size: 43px;
+    text-align: center;
+    margin: 80px 0 0 0;
+}
+
+span
+{
+    font-weight: 300;
+    font-size: 26px;
+    color: $color-2;
+}
+
+@mixin headings
+{
+    font-weight: 500;
+    text-align: center;
+    color: $color-3;
+}
+
+#heading
+{
+    margin: 50px 0 0 0;
+}
+
+h2
+{
+    @include headings;
+    margin: 20px 0 0 0;
+    font-size: 28px;
+}
+
+h3
+{
+    @include headings;
+    margin: 40px 0 0 0;
+    font-size: 32px;
+}
+
+#images
+{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
+    margin: 80px 0 0 0;
+
+    img
+    {
+        margin: 0 25px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 3px $color-2 solid;
+    }
+
+    img:hover
+    {
+        cursor: pointer;
+        border: 5px $color-3 solid;
+        border-radius: 50%;
+        transition: 0.1 ease-in-out;
+    }
+
+    img:active
+    {
+        border: 5px #3586a4b2 solid;
+        border-radius: 50%;
+    }
+}
+
+footer
+{
+    p
+    {
+        position: relative;
+        top: 250px;
+        font-weight: 500;
+        text-align: right;
+        margin: 0 20px 0 0;
+        color: $color-3;
+        font-weight: 300;
+        font-size: 20px;
+
+        a
+        {
+            color: $color-2;
+            font-weight: 500;
+        }
+    }
+}
+
+@media screen and (max-width: 725px) 
+{
+    #images
+    {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0 0 0;
+
+        img
+        {
+            margin: 20px 10px;
+        }
+    }
+
+    footer
+    {
+        p
+        {
+            top: 100px;
+        }
+    }
+
+    h1
+    {
+        font-size: 32px;
+    }
+
+    span
+    {
+        font-size: 24px;
+    }
+
+    h2
+    {
+        font-size: 24px;
+    }
+
+    #heading
+    {
+        margin: 40px 0 0 0;
+    }
+
+    h3
+    {
+        margin: 35px 0 0 0;
+        font-size: 28px;
+    }
+}
